@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import data1 from './dbdata.js'
 import Pusher from "pusher";
 const app=express()
-const port =process.env.PORT|5000
+const port =process.env.PORT|9000
 const pusher = new Pusher({
     appId: "1364450",
     key: "7ce1e74809f4f8aa6fc5",
