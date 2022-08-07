@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import data1 from './dbdata.js'
 import Pusher from "pusher";
+const host="0.0.0.0";
 const app=express()
 const port =process.env.PORT|9000
 const pusher = new Pusher({
@@ -65,6 +66,6 @@ app.post('/messages/new',(req,res)=>{
     })
 })
 
-app.listen(port,()=>{
+app.listen(port,host,()=>{
     console.log(`listening at port ${port}`);
 })
